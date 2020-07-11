@@ -1,0 +1,35 @@
+@echo on
+echo                                                                                              
+echo          88          88                                                                      
+echo          88          ""   ,d      ,d                                                  ,d     
+echo          88               88      88                                                  88     
+echo ,adPPYba, 88,dPPYba,  88 MM88MMM MM88MMM ,adPPYba, 8b,dPPYba, 8b,dPPYba,   ,adPPYba, MM88MMM  
+echo I8[    "" 88P'    "8a 88   88      88   a8P_____88 88P'   "Y8 88P'   `"8a a8P_____88   88     
+echo  `"Y8ba,  88       88 88   88      88   8PP""""""" 88         88       88 8PP"""""""   88     
+echo aa    ]8I 88       88 88   88,     88,  "8b,   ,aa 88         88       88 "8b,   ,aa   88,    
+echo `"YbbdP"' 88       88 88   "Y888   "Y888 `"Ybbd8"' 88         88       88  `"Ybbd8"'   "Y888  
+echo                                                                                              
+echo                                                                                             
+pause
+echo THIS PROGRAM WILL RESET THE FOLLOWING TO DEFAULT:
+echo WINSOCK, TCP/IP stack, firewall, DNS cache, DNS registration, routing table.
+@ECHO OFF
+
+:choice
+set /P c=Are you sure you want to continue[Y/N]?
+if /I "%c%" EQU "Y" goto :somewhere
+if /I "%c%" EQU "N" goto :somewhere_else
+goto :choice
+
+
+:somewhere
+
+echo "I am here because you typed Y"
+pause
+exit
+
+:somewhere_else
+
+echo "I am here because you typed N"
+pause
+exit
