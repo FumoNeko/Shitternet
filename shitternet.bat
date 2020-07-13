@@ -1,7 +1,7 @@
 @ECHO OFF
-cd C:\Users\chegu\Desktop
+cd C:\Users\Username\Desktop
 type shitternetlogo.txt  
-cd C:\WINDOWS\system324	        
+cd C:\WINDOWS\system32	        
 pause
 echo THIS PROGRAM WILL RESET THE FOLLOWING TO DEFAULT:
 echo WINSOCK, TCP/IP stack, firewall, DNS cache, DNS registration, routing table.
